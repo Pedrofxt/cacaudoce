@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cacau Doce — Confeitaria artesanal</title>
+<meta name="description" content="Brigadeiros, bolos e docinhos feitos à mão pela Cacau Doce. Faça sua encomenda.">
+<link rel="icon" href="assets/logo.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,400&amp;family=DM+Sans:wght@400;500;700&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#FAF6F0}html{scroll-behavior:smooth}
+a{color:#8E1B22}a:hover{color:#6B1218}
+@keyframes up{from{opacity:0;transform:translateY(28px)}to{opacity:1;transform:none}}
+@keyframes float{50%{transform:translateY(-14px) rotate(-1.5deg)}}
+@keyframes spin{to{transform:rotate(360deg)}}
+@keyframes mq{to{transform:translateX(-50%)}}
+.a{animation:up 1s cubic-bezier(.2,.7,.2,1) both}.d1{animation-delay:.12s}.d2{animation-delay:.26s}.d3{animation-delay:.4s}.d4{animation-delay:.55s}
+.float{animation:float 6s ease-in-out infinite}.spin{animation:spin 22s linear infinite}
+.mq{animation:mq 28s linear infinite}
+@supports (animation-timeline: view()){.r{animation:up linear both;animation-timeline:view();animation-range:entry 0% entry 45%}}
+.row{transition:padding .45s cubic-bezier(.2,.7,.2,1),background .45s}.row:hover{padding-left:20px;background:#F3EBDF}
+.btn{transition:transform .35s,box-shadow .35s}.btn:hover{transform:translateY(-3px);box-shadow:0 14px 30px rgba(59,31,20,.18)}
+.ln{background:linear-gradient(currentColor,currentColor) 0 100%/0 1px no-repeat;transition:background-size .4s}.ln:hover{background-size:100% 1px}
+.pill{transition:background .35s,color .35s}.pill:hover{background:#2B1810;color:#FAF6F0}
+@media (prefers-reduced-motion: reduce){*{animation:none!important;transition:none!important}}
+</style>
+</head>
+<body>
+<div style="font-family: 'DM Sans', system-ui, sans-serif; color: #2B1810; background: #FAF6F0; overflow: hidden">
+
+<header class="a" style="max-width: 1240px; margin: 0 auto; padding: 22px 28px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px">
+<a href="#topo" style="display: flex; align-items: center; gap: 12px; text-decoration: none; color: #2B1810">
+<img src="assets/logo.jpg" alt="Logo Cacau Doce" style="width: 44px; height: 44px; object-fit: cover; border-radius: 50%; background: #fff">
+<span style="font-family: Fraunces, Georgia, serif; font-size: 21px; font-weight: 600; letter-spacing: -0.01em">Cacau Doce</span>
+</a>
+<nav style="display: flex; flex-wrap: wrap; align-items: center; gap: 8px 32px; font-size: 14px; letter-spacing: 0.02em">
+<a class="ln" href="#cardapio" style="color: #2B1810; text-decoration: none">Cardápio</a>
+<a class="ln" href="#sobre" style="color: #2B1810; text-decoration: none">Sobre</a>
+<a class="ln" href="#como" style="color: #2B1810; text-decoration: none">Encomendas</a>
+<a class="btn" href="#contato" style="color: #2B1810; text-decoration: none; border: 1px solid #2B1810; padding: 11px 22px; border-radius: 999px; font-weight: 500">Encomendar</a>
+</nav>
+</header>
+
+<section id="topo" style="max-width: 1240px; margin: 0 auto; padding: 72px 28px 96px; display: flex; flex-wrap: wrap; align-items: center; gap: 64px">
+<div style="flex: 999 1 520px; min-width: 0; display: flex; flex-direction: column; gap: 28px">
+<span class="a d1" style="font-size: 12px; letter-spacing: 0.22em; text-transform: uppercase; color: #8A6A58">Confeitaria artesanal</span>
+<h1 class="a d2" style="margin: 0; font-family: Fraunces, Georgia, serif; font-weight: 400; font-size: clamp(44px, 7vw, 92px); line-height: 1; letter-spacing: -0.03em">Doces que viram <em style="color: #8E1B22">lembrança</em></h1>
+<p class="a d3" style="margin: 0; font-size: 18px; line-height: 1.7; color: #6B4E40; max-width: 480px">Brigadeiros, bolos e docinhos feitos à mão, com chocolate de verdade, para adoçar cada momento especial.</p>
+<div class="a d4" style="display: flex; flex-wrap: wrap; align-items: center; gap: 24px; margin-top: 8px">
+<a class="btn" href="#contato" style="background: #8E1B22; color: #fff; text-decoration: none; padding: 18px 32px; border-radius: 999px; font-weight: 500; font-size: 16px">Fazer encomenda</a>
+<a class="ln" href="#cardapio" style="color: #2B1810; text-decoration: none; font-size: 15px">Ver cardápio →</a>
+</div>
+</div>
+<div class="a d3" style="flex: 1 1 340px; display: flex; justify-content: center; position: relative">
+<div class="float" style="width: min(400px, 82vw); aspect-ratio: 1; border-radius: 50%; background: #fff; overflow: hidden; box-shadow: 0 30px 80px rgba(59,31,20,.12)">
+<img src="assets/logo.jpg" alt="Logo da Cacau Doce: brigadeiros, fruto de cacau e folhas" style="width: 100%; height: 100%; object-fit: cover; display: block">
+</div>
+<svg class="spin" aria-hidden="true" width="132" height="132" viewBox="0 0 132 132" style="position: absolute; left: 4%; bottom: -4%; background: #FAF6F0; border-radius: 50%">
+<defs><path id="ring" d="M66,66 m-48,0 a48,48 0 1,1 96,0 a48,48 0 1,1 -96,0"></path></defs>
+<text style="font-family: 'DM Sans', sans-serif; font-size: 11.5px; letter-spacing: 3.2px; text-transform: uppercase" fill="#2B1810"><textPath href="#ring">Feito à mão · Feito com amor · </textPath></text>
+<circle cx="66" cy="66" r="5" fill="#8E1B22"></circle>
+</svg>
+</div>
+</section>
+
+<div aria-hidden="true" style="border-top: 1px solid #E7DCCD; border-bottom: 1px solid #E7DCCD; padding: 22px 0; white-space: nowrap; overflow: hidden">
+<div class="mq" style="display: inline-flex; gap: 48px; font-family: Fraunces, Georgia, serif; font-style: italic; font-size: 26px; color: #8A6A58">
+<span>Brigadeiros gourmet</span><span>✦</span><span>Bolos</span><span>✦</span><span>Docinhos de festa</span><span>✦</span><span>Trufas</span><span>✦</span><span>Caixas de presente</span><span>✦</span><span>Encomendas</span><span>✦</span>
+<span>Brigadeiros gourmet</span><span>✦</span><span>Bolos</span><span>✦</span><span>Docinhos de festa</span><span>✦</span><span>Trufas</span><span>✦</span><span>Caixas de presente</span><span>✦</span><span>Encomendas</span><span>✦</span>
+</div>
+</div>
+
+<section id="cardapio" style="max-width: 1240px; margin: 0 auto; padding: 120px 28px">
+<div class="r" style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-end; gap: 24px; margin-bottom: 56px">
+<h2 style="margin: 0; font-family: Fraunces, Georgia, serif; font-weight: 400; font-size: clamp(34px, 4.5vw, 56px); line-height: 1.05; letter-spacing: -0.02em; max-width: 620px">Nosso cardápio</h2>
+<p style="margin: 0; font-size: 16px; line-height: 1.7; color: #6B4E40; max-width: 360px">Feitos sob encomenda, em pequenas fornadas, para chegar fresquinhos até você.</p>
+</div>
+<div style="border-top: 1px solid #2B1810">
+
+<div class="row r" style="display: flex; flex-wrap: wrap; align-items: baseline; gap: 12px 40px; padding: 30px 0; border-bottom: 1px solid #E7DCCD">
+<span style="font-family: Fraunces, Georgia, serif; font-size: 15px; color: #8E1B22; width: 40px">01</span>
+<h3 style="margin: 0; font-family: Fraunces, Georgia, serif; font-weight: 400; font-size: clamp(24px, 2.6vw, 32px); letter-spacing: -0.01em; flex: 1 1 280px">Brigadeiros gourmet</h3>
+<p style="margin: 0; font-size: 16px; line-height: 1.6; color: #6B4E40; flex: 1 1 340px">Tradicional, ninho, pistache, morango e sabores da estação.</p>
+<span style="font-size: 14px; color: #2B1810; white-space: nowrap; flex: none">a partir de [PREÇO]</span>
+</div>
+
+<div class="row r" style="display: flex; flex-wrap: wrap; align-items: baseline; gap: 12px 40px; padding: 30px 0; border-bottom: 1px solid #E7DCCD">
+<span style="font-family: Fraunces, Georgia, serif; font-size: 15px; color: #8E1B22; width: 40px">02</span>
+<h3 style="margin: 0; font-family: Fraunces, Georgia, serif; font-weight: 400; font-size: clamp(24px, 2.6vw, 32px); letter-spacing: -0.01em; flex: 1 1 280px">Docinhos para festa</h3>
+<p style="margin: 0; font-size: 16px; line-height: 1.6; color: #6B4E40; flex: 1 1 340px">Cento de docinhos finos para aniversários, casamentos e chás.</p>
+<span style="font-size: 14px; color: #2B1810; white-space: nowrap; flex: none">a partir de [PREÇO]</span>
+</div>
+
+<div class="row r" style="display: flex; flex-wrap: wrap; align-items: baseline; gap: 12px 40px; padding: 30px 0; border-bottom: 1px solid #E7DCCD">
+<span style="font-family: Fraunces, Georgia, serif; font-size: 15px; color: #8E1B22; width: 40px">03</span>
+<h3 style="margin: 0; font-family: Fraunces, Georgia, serif; font-weight: 400; font-size: clamp(24px, 2.6vw, 32px); letter-spacing: -0.01em; flex: 1 1 280px">Bolos e tortas</h3>
+<p style="margin: 0; font-size: 16px; line-height: 1.6; color: #6B4E40; flex: 1 1 340px">Bolos recheados e tortas para celebrar com quem você ama.</p>
+<span style="font-size: 14px; color: #2B1810; white-space: nowrap; flex: none">a partir de [PREÇO]</span>
+</div>
+
+<div class="row r" style="display: flex; flex-wrap: wrap; align-items: baseline; gap: 12px 40px; padding: 30px 0; border-bottom: 1px solid #E7DCCD">
+<span style="font-family: Fraunces, Georgia, serif; font-size: 15px; color: #8E1B22; width: 40px">04</span>
+<h3 style="margin: 0; font-family: Fraunces, Georgia, serif; font-weight: 400; font-size: clamp(24px, 2.6vw, 32px); letter-spacing: -0.01em; flex: 1 1 280px">Trufas e bombons</h3>
+<p style="margin: 0; font-size: 16px; line-height: 1.6; color: #6B4E40; flex: 1 1 340px">Chocolate cremoso por dentro, casquinha crocante por fora.</p>
+<span style="font-size: 14px; color: #2B1810; white-space: nowrap; flex: none">a partir de [PREÇO]</span>
+</div>
+
+<div class="row r" style="display: flex; flex-wrap: wrap; align-items: baseline; gap: 12px 40px; padding: 30px 0; border-bottom: 1px solid #E7DCCD">
+<span style="font-family: Fraunces, Georgia, serif; font-size: 15px; color: #8E1B22; width: 40px">05</span>
+<h3 style="margin: 0; font-family: Fraunces, Georgia, serif; font-weight: 400; font-size: clamp(24px, 2.6vw, 32px); letter-spacing: -0.01em; flex: 1 1 280px">Caixas de presente</h3>
+<p style="margin: 0; font-size: 16px; line-height: 1.6; color: #6B4E40; flex: 1 1 340px">Seleções montadas com carinho para presentear em qualquer data.</p>
+<span style="font-size: 14px; color: #2B1810; white-space: nowrap; flex: none">a partir de [PREÇO]</span>
+</div>
+
+<div class="row r" style="display: flex; flex-wrap: wrap; align-items: baseline; gap: 12px 40px; padding: 30px 0; border-bottom: 1px solid #E7DCCD">
+<span style="font-family: Fraunces, Georgia, serif; font-size: 15px; color: #8E1B22; width: 40px">06</span>
+<h3 style="margin: 0; font-family: Fraunces, Georgia, serif; font-weight: 400; font-size: clamp(24px, 2.6vw, 32px); letter-spacing: -0.01em; flex: 1 1 280px">Encomendas personalizadas</h3>
+<p style="margin: 0; font-size: 16px; line-height: 1.6; color: #6B4E40; flex: 1 1 340px">Sabores, cores e embalagens no tema da sua festa ou empresa.</p>
+<span style="font-size: 14px; color: #2B1810; white-space: nowrap; flex: none">sob consulta</span>
+</div>
+
+</div>
+</section>
+
+<section id="sobre" style="background: #2B1810; color: #FAF6F0">
+<div style="max-width: 1240px; margin: 0 auto; padding: 120px 28px; display: flex; flex-wrap: wrap; gap: 64px; align-items: flex-start">
+<div class="r" style="flex: 1 1 380px; min-width: 0">
+<span style="font-size: 12px; letter-spacing: 0.22em; text-transform: uppercase; color: #C9A98F">Nossa história</span>
+<h2 style="margin: 20px 0 0; font-family: Fraunces, Georgia, serif; font-weight: 400; font-size: clamp(34px, 4.5vw, 56px); line-height: 1.05; letter-spacing: -0.02em">Chocolate de verdade, <em style="color: #E9B949">feito com carinho</em></h2>
+</div>
+<div class="r" style="flex: 1.2 1 420px; min-width: 0; display: flex; flex-direction: column; gap: 20px; font-size: 18px; line-height: 1.75; color: #E3D3C3">
+<p style="margin: 0">A Cacau Doce nasceu do amor pelo chocolate. Cada doce é feito à mão, com ingredientes selecionados e o cuidado de quem faz para a própria família.</p>
+<p style="margin: 0">Do brigadeiro clássico às caixas de presente, nosso compromisso é o mesmo: sabor marcante, apresentação caprichada e um momento doce que fica na memória.</p>
+<p style="margin: 8px 0 0; font-family: Fraunces, Georgia, serif; font-style: italic; font-size: 22px; color: #FAF6F0">— [SEU NOME], fundadora</p>
+</div>
+</div>
+</section>
+
+<section style="max-width: 1240px; margin: 0 auto; padding: 120px 28px 40px; text-align: center">
+<h2 class="r" style="margin: 0 auto; font-family: Fraunces, Georgia, serif; font-weight: 400; font-size: clamp(30px, 3.6vw, 44px); line-height: 1.15; letter-spacing: -0.02em; max-width: 720px">Para todas as ocasiões</h2>
+<div class="r" style="display: flex; flex-wrap: wrap; justify-content: center; gap: 12px; margin-top: 40px">
+
+<span class="pill" style="border: 1px solid #2B1810; border-radius: 999px; padding: 14px 24px; font-size: 16px">Aniversários</span>
+
+<span class="pill" style="border: 1px solid #2B1810; border-radius: 999px; padding: 14px 24px; font-size: 16px">Casamentos</span>
+
+<span class="pill" style="border: 1px solid #2B1810; border-radius: 999px; padding: 14px 24px; font-size: 16px">Chá de bebê</span>
+
+<span class="pill" style="border: 1px solid #2B1810; border-radius: 999px; padding: 14px 24px; font-size: 16px">Datas especiais</span>
+
+<span class="pill" style="border: 1px solid #2B1810; border-radius: 999px; padding: 14px 24px; font-size: 16px">Presentes</span>
+
+<span class="pill" style="border: 1px solid #2B1810; border-radius: 999px; padding: 14px 24px; font-size: 16px">Empresas e eventos</span>
+
+</div>
+</section>
+
+<section id="como" style="max-width: 1240px; margin: 0 auto; padding: 80px 28px 120px">
+<h2 class="r" style="margin: 0 0 56px; font-family: Fraunces, Georgia, serif; font-weight: 400; font-size: clamp(34px, 4.5vw, 56px); line-height: 1.05; letter-spacing: -0.02em">Como encomendar</h2>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 48px">
+
+<div class="r" style="display: flex; flex-direction: column; gap: 14px; border-top: 1px solid #2B1810; padding-top: 24px">
+<span style="font-family: Fraunces, Georgia, serif; font-size: 64px; line-height: 1; color: #8E1B22">01</span>
+<h3 style="margin: 0; font-family: Fraunces, Georgia, serif; font-weight: 400; font-size: 26px">Escolha seus doces</h3>
+<p style="margin: 0; font-size: 16px; line-height: 1.65; color: #6B4E40">Veja o cardápio e escolha sabores, quantidades e embalagem.</p>
+</div>
+
+<div class="r" style="display: flex; flex-direction: column; gap: 14px; border-top: 1px solid #2B1810; padding-top: 24px">
+<span style="font-family: Fraunces, Georgia, serif; font-size: 64px; line-height: 1; color: #8E1B22">02</span>
+<h3 style="margin: 0; font-family: Fraunces, Georgia, serif; font-weight: 400; font-size: 26px">Chame no WhatsApp</h3>
+<p style="margin: 0; font-size: 16px; line-height: 1.65; color: #6B4E40">Envie seu pedido com a data. Pedimos [PRAZO] de antecedência.</p>
+</div>
+
+<div class="r" style="display: flex; flex-direction: column; gap: 14px; border-top: 1px solid #2B1810; padding-top: 24px">
+<span style="font-family: Fraunces, Georgia, serif; font-size: 64px; line-height: 1; color: #8E1B22">03</span>
+<h3 style="margin: 0; font-family: Fraunces, Georgia, serif; font-weight: 400; font-size: 26px">Retire ou receba</h3>
+<p style="margin: 0; font-size: 16px; line-height: 1.65; color: #6B4E40">Retirada ou entrega em [SUA REGIÃO], fresquinho no dia combinado.</p>
+</div>
+
+</div>
+</section>
+
+<section style="background: #F3EBDF">
+<div class="r" style="max-width: 1240px; margin: 0 auto; padding: 96px 28px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 32px">
+<div style="flex: 999 1 520px; min-width: 0; display: flex; flex-direction: column; gap: 16px">
+<span style="font-size: 12px; letter-spacing: 0.22em; text-transform: uppercase; color: #8A6A58">Cursos e mentoria</span>
+<h2 style="margin: 0; font-family: Fraunces, Georgia, serif; font-weight: 400; font-size: clamp(32px, 4.2vw, 52px); line-height: 1.05; letter-spacing: -0.02em">Te ensino a <em style="color: #8E1B22">empreender</em> na confeitaria</h2>
+<p style="margin: 0; font-size: 17px; line-height: 1.7; color: #6B4E40; max-width: 560px">Quer transformar seus doces em renda? Aprenda receitas que vendem, precificação, embalagem e divulgação com quem vive a confeitaria todos os dias.</p>
+</div>
+<a class="btn" href="#contato" style="color: #2B1810; text-decoration: none; border: 1px solid #2B1810; padding: 18px 32px; border-radius: 999px; font-weight: 500; font-size: 16px">Quero aprender</a>
+</div>
+</section>
+
+<section id="contato" style="border-top: 1px solid #E7DCCD">
+<div class="r" style="max-width: 900px; margin: 0 auto; padding: 128px 28px; text-align: center; display: flex; flex-direction: column; align-items: center; gap: 28px">
+<span style="font-size: 12px; letter-spacing: 0.22em; text-transform: uppercase; color: #8A6A58">Bateu vontade?</span>
+<h2 style="margin: 0; font-family: Fraunces, Georgia, serif; font-weight: 400; font-size: clamp(38px, 5.5vw, 72px); line-height: 1.02; letter-spacing: -0.03em">Sua encomenda começa com <em style="color: #8E1B22">uma mensagem</em></h2>
+<p style="margin: 0; font-size: 18px; line-height: 1.7; color: #6B4E40; max-width: 520px">Chame no WhatsApp, conte a ocasião e montamos juntos o pedido ideal.</p>
+<a class="btn" href="https://wa.me/" style="background: #8E1B22; color: #fff; text-decoration: none; padding: 20px 40px; border-radius: 999px; font-weight: 500; font-size: 17px; margin-top: 8px">Falar no WhatsApp</a>
+<span style="font-size: 14px; color: #8A6A58">[SEU WHATSAPP]</span>
+</div>
+</section>
+
+<footer style="border-top: 1px solid #E7DCCD">
+<div style="max-width: 1240px; margin: 0 auto; padding: 32px 28px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px; font-size: 14px; color: #6B4E40">
+<span style="font-family: Fraunces, Georgia, serif; font-size: 18px; color: #2B1810">Cacau Doce</span>
+<div style="display: flex; flex-wrap: wrap; gap: 8px 28px">
+<span>Instagram [@SEU_INSTAGRAM]</span>
+<span>[SUA CIDADE]</span>
+<span>© 2026 Cacau Doce</span>
+</div>
+</div>
+</footer>
+
+</div>
+</body>
+</html>
